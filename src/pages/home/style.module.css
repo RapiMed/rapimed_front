@@ -1,0 +1,7 @@
+.container {
+    background-image: url('/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgba(76, 175, 79, 0.041)
+}
