@@ -16,7 +16,13 @@ export default {
         'verde-e': '#79997b',
         'vermelho-ho':'#932525', 
         'verdinho': '#dfeadc',
-        'verde-ho': '#7b9d6e'
+        'verde-ho': '#7b9d6e',
+        'azul-bg': '#F8FDFD',
+        'verde-banner': '#008B88',
+        'vermelho-login-button': '#FF2241',
+        'cinza-text': '#757575'
+        
+        
       },
   },
   plugins: [],
