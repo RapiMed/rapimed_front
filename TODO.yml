@@ -1,0 +1,27 @@
+* Geral:
+- lugares enviando pra uma rota /home no lugar do /
+- Botão de favorito não funciona
+- logo deveria ser clicavel e ir pra home
+- categorias na home não funciona
+- background da home não esta ocupando todo o espaço
+- links do footer não funcionam
+- arrumar copyright
+- home e categorias são as mesmas coisas?
+- Algo estranho ocorre quando passa da home pra pagina de sobre nós na primeira vez
+- Cada pagina com um background diferente
+- Fale conosco pode melhorar
+- pesquisa n serve pra nada
+- Carrinho de compras não funciona
+- Cade pagina de produtos?
+- Retirar pagina "Categorias" e criar pagina "Produtos"
+- Cor de botão "Entrar" e "Cadastrar" deveriam seguir a primary color(azul)
+- Validacao de inputs
+- formulario de cadastro não tem a necessidade de um botão "cancelar"
+- Retirar o botão de quem somos da pagina de quem somos
+- botão de carrinho pode ser melhorado
+
+* Responsivo:
+- Melhorar o header
+- Responsivo da pagina de fale conosco
+- Responsivo do cadastro
+- Responsivo do login

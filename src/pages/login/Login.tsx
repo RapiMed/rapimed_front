@@ -19,7 +19,7 @@ function Login() {
 
   useEffect(() => {
     if (usuario.token !== "") {
-      navigate("/home");
+      navigate("/");
     }
   }, [usuario]);
 
@@ -37,11 +37,11 @@ function Login() {
 
   return (
     <>
-      <div className="bg-azul-bg w-full h-screen">
-        <div className="w6/6 m-auto py-20 ml-20 relative">
+      <div className="bg-azul-bg w-full h-screen pt-7">
+        <div className="hidden sm:block sm:absolute lg:left-[160px] xl:left-[10rem] 2xl:left-[20rem]">
           <img src="/bg.png" alt="Imagem de fundo ilustração" className="rounded-[22px]"/>
         </div>
-        <div className="flex flex-col w-96 h-5/6 font-bold absolute  justify-center items-center bg-branco top-60 right-40 p-10 mr-20 rounded-[22px] shadow">
+        <div className="flex flex-col m-auto w-5/6 max-w-[400px] h-4/6 font-bold  justify-center items-center bg-branco p-6 rounded-[22px] shadow sm:relative lg:left-[18rem] lg:h-[38rem] lg:top-[2rem]">
           <form
             className="flex justify-center items-center flex-col w-full gap-4 h-96" onSubmit={login}
           >
@@ -101,5 +101,7 @@ function Login() {
     </>
   );
 }
+
+Login.route = '/login'
 
 export default Login;

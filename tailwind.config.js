@@ -20,10 +20,9 @@ export default {
         'azul-bg': '#F8FDFD',
         'verde-banner': '#008B88',
         'vermelho-login-button': '#FF2241',
-        'cinza-text': '#757575'
-        
-        
-      },
+        'cinza-text': '#757575',
+        'laranja-btn': '#FF6534'
+      }
   },
   plugins: [],
 }
