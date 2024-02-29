@@ -11,7 +11,8 @@ function SubNavbar(){
                 <div className="flex items-center space-x-5">
                     
                 <Link to="/" className="hover:text-turqueza">Home</Link>
-                    <Link to="/sobre" className="hover:text-turqueza">Categorias</Link>
+                    <Link to="/categorias" className="hover:text-turqueza">Categorias</Link>
+                    <Link to="/cadastrarCategorias" className="hover:text-turqueza">Cadastrar Categorias</Link>
                     <Link to="/sobre" className="hover:text-turqueza">Sobre nós</Link>
                     <Link to="/contato" className="hover:text-turqueza">Contato</Link>
                 </div>

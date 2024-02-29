@@ -21,7 +21,10 @@ export default {
         'verde-banner': '#008B88',
         'vermelho-login-button': '#FF2241',
         'cinza-text': '#757575',
-        'laranja-btn': '#FF6534'
+        'laranja-btn': '#FF6534',
+        'bb1': '#E4FFEF',
+        'bb2': '#FAB7B7',
+        'bb3': '#535353', 
       }
   },
   plugins: [],

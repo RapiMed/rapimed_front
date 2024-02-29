@@ -72,10 +72,16 @@ function Navbar() {
                   </Link>
 
                   <Link
-                    to="/sobre"
+                    to="/categorias"
                     className="hover:text-turqueza rounded-md px-3 py-2 text-sm font-medium"
                   >
                     Categorias
+                  </Link>
+                  <Link
+                    to="/cadastrarCategoria"
+                    className="hover:text-turqueza rounded-md px-3 py-2 text-sm font-medium"
+                  >
+                    Cadastrar Categorias
                   </Link>
                   <Link
                     to="/sobre"
