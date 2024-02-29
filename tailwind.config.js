@@ -24,7 +24,10 @@ export default {
         'laranja-btn': '#FF6534',
         'bb1': '#E4FFEF',
         'bb2': '#FAB7B7',
-        'bb3': '#535353', 
+        'bb3': '#535353',
+        'bb4': '#EE7A7A',
+        'bb5': '#25DAAE',
+        'bb5': '#034C4A',
       }
   },
   plugins: [],

@@ -29,7 +29,7 @@ function App() {
             <Route path="/cadastroCategoria" element={<FormularioCategoria />} />
             <Route path="/editarCategoria/:id" element={<FormularioCategoria />} />
             <Route path="/cadastrarCategoria" element={<FormularioCategoria />} />
-            <Route path="/deletarTema/:id" element={<DeletarCategoria />} />
+            <Route path="/deletarCategoria/:id" element={<DeletarCategoria />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/contato" element={<Contact />} />
             <Route path="/login" element={<Login />} />

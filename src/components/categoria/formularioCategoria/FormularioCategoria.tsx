@@ -49,7 +49,7 @@ function FormularioCategoria() {
           }
         })
 
-        alert('Categoria atualizado com sucesso')
+        toastAlerta("Tema atualizado com sucesso", "sucesso");
         retornar()
 
       } catch (error: any) {
@@ -70,16 +70,15 @@ function FormularioCategoria() {
           }
         })
 
-        alert('Categoria cadastrada com sucesso')
+        toastAlerta("Tema cadastrado com sucesso", "sucesso");
 
       } catch (error: any) {
         console.error(error)
         if (error.toString().includes('403')) {
-          alert('O token expirou, favor logar novamente')
+          toastAlerta("O token expirou, favor logar novamente", "info");
           handleLogout()
         } else {
-          alert('Erro ao cadastrado o Categoria')
-          toastAlerta('Erro ao cadastrar Categoria','erro')
+          toastAlerta("Erro ao cadastrado o Tema", "erro");
         }
       }
     }
@@ -93,7 +92,7 @@ function FormularioCategoria() {
 
   useEffect(() => {
     if (token === '') {
-      alert('Você precisa estar logado');
+      toastAlerta("Você precisa estar logado", "info");
       navigate('/login');
     }
   }, [token]);
@@ -106,11 +105,20 @@ function FormularioCategoria() {
 
       <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovaCategoria}>
         <div className="flex flex-col gap-2">
-          <label htmlFor="descricao">Descrição do categoria</label>
+          <label htmlFor="nomeCategoria">Nome Categoria</label>
+          <input
+            type="text"
+            placeholder="Nome"
+            name='nomeCategoria'
+            className="border-2 border-slate-700 rounded p-2"
+            value={categoria.nomeCategoria}
+            onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
+          />
+          <label htmlFor="descricaoCategoria">Descricação</label>
           <input
             type="text"
             placeholder="Descrição"
-            name='descricao'
+            name='descricaoCategoria'
             className="border-2 border-slate-700 rounded p-2"
             value={categoria.descricaoCategoria}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
