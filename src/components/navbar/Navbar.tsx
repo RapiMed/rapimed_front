@@ -1,4 +1,4 @@
-import { Heart, MagnifyingGlass, ShoppingCart, User } from "phosphor-react";
+import { Heart, ShoppingCart } from "phosphor-react";
 import { Link } from "react-router-dom";
 import WelcomeNavbar from "./Welcomenavbar";
 import { useState } from "react";
@@ -78,12 +78,6 @@ function Navbar() {
                     Categorias
                   </Link>
                   <Link
-                    to="/cadastrarCategoria"
-                    className="hover:text-turqueza rounded-md px-3 py-2 text-sm font-medium"
-                  >
-                    Cadastrar Categorias
-                  </Link>
-                  <Link
                     to="/sobre"
                     className="hover:text-turqueza rounded-md px-3 py-2 text-sm font-medium"
                   >
@@ -95,6 +89,14 @@ function Navbar() {
                   >
                     Contato
                   </Link>
+
+                  <Link
+                    to="/produtos"
+                    className="hover:text-turqueza rounded-md px-3 py-2 text-sm font-medium"
+                  >
+                    Produtos
+                  </Link>
+
                 </div>
               </div>
             </div>

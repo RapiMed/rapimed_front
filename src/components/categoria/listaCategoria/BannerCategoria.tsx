@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function BannerCategoria(){
 
     return (
@@ -12,7 +14,7 @@ function BannerCategoria(){
                         <img src="/imgcateg.png"/>
                     </div>  
                 </div>
-
+                <Link to='/cadastroCategoria'>Cadastro Categoria</Link>
             </div>
         </>
     )

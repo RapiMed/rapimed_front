@@ -1,13 +1,14 @@
 import Categoria from "./Categoria";
+import Usuario from "./Usuario";
 
 
 export default interface Produto{
-    id: number;
+    id?: number;
     nomeProduto: string;
     descricaoProduto: string;
     preco: number;
     fabricante: string
     foto: string;
-    Categoria?: Categoria | null;
-    
+    categoria?: Categoria | null; 
+    usuario?: Usuario | null;
 }
