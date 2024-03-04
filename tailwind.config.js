@@ -28,6 +28,8 @@ export default withMT({
         'bb4': "#EE7A7A",
         'bb5': "#25DAAE",
         'bb5': "#034C4A",
+        'bb6': '#48D1CC',
+        'bb7': '#eaf4f4',
       },
     },
   },

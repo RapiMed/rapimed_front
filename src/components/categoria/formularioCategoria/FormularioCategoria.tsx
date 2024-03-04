@@ -49,7 +49,7 @@ function FormularioCategoria() {
           }
         })
 
-        toastAlerta("Tema atualizado com sucesso", "sucesso");
+        toastAlerta("Categoria atualizada com sucesso", "sucesso");
         retornar()
 
       } catch (error: any) {
@@ -70,7 +70,7 @@ function FormularioCategoria() {
           }
         })
 
-        toastAlerta("Tema cadastrado com sucesso", "sucesso");
+        toastAlerta("Categoria cadastrada com sucesso", "sucesso");
 
       } catch (error: any) {
         console.error(error)
@@ -104,23 +104,23 @@ function FormularioCategoria() {
         {id === undefined ? 'Cadastre uma nova categoria' : 'Editar categoria'}
       </h1>
 
-      <form className="w-1/2 flex flex-col gap-4 bg-azul-bg p-10 rounded-[22px]" onSubmit={gerarNovaCategoria}>
+      <form className="w-1/2 flex flex-col gap-4 bg-azul-bg p-10 rounded-[22px] shadow" onSubmit={gerarNovaCategoria}>
         <div className="flex flex-col gap-2">
           <label htmlFor="nomeCategoria">Nome Categoria</label>
           <input
             type="text"
             placeholder="Nome"
             name='nomeCategoria'
-            className="border-2 border-slate-700 rounded p-2"
+            className="border-2 border-slate-700 rounded p-2 outline-none"
             value={categoria.nomeCategoria}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
           />
-          <label htmlFor="descricaoCategoria">Descricação</label>
+          <label htmlFor="descricaoCategoria">Descrição</label>
           <input
             type="text"
             placeholder="Descrição"
             name='descricaoCategoria'
-            className="border-2 border-slate-700 rounded p-2"
+            className="border-2 border-slate-700 rounded p-2 outline-none"
             value={categoria.descricaoCategoria}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
           />

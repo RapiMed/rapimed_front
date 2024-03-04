@@ -70,7 +70,7 @@ export function CarouselCustomArrows() {
           alt: "image 2",
         },
         {
-          url: "carrossel3.png",
+          url: "carrossel4.png",
           alt: "image 3",
         },
       ].map((item) => (

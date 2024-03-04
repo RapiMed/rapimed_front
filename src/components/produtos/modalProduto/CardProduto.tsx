@@ -21,6 +21,7 @@ function CardProduto({ produto }: CardProdutoProps) {
         </h4>
         <p>{produto.descricaoProduto}</p>
         <p>Categoria: {produto.categoria?.nomeCategoria}</p>
+        <p className="py-1 my-2 bg-red-100 w-1/3 text-center rounded-[22px] font-bold text-gray-700 mb-auto">R$ {produto.preco}</p>
       </div>
 
       <div className="flex gap-2 m-2 mt-auto">

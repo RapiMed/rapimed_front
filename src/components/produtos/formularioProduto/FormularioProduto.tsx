@@ -134,12 +134,12 @@ function FormularioProduto() {
   const carregandoCategoria = categoria.descricaoCategoria === "";
 
   return (
-    <div className="container flex flex-col mx-auto items-center">
+    <div className="container flex flex-col mx-auto items-center mb-10">
       <h1 className="text-4xl text-center my-8">
         {id !== undefined ? "Editar Produto" : "Cadastrar Produto"}
       </h1>
 
-      <form onSubmit={gerarNovoProduto} className="flex flex-col w-1/2 gap-4">
+      <form onSubmit={gerarNovoProduto} className="flex flex-col w-1/2 gap-4 bg-azul-bg p-10 rounded-[22px] shadow">
         <div className="flex flex-col gap-2">
           <label htmlFor="nomeProduto">Nome</label>
           <input
@@ -149,7 +149,7 @@ function FormularioProduto() {
             placeholder="Nome do produto"
             name="nomeProduto"
             required
-            className="border-2 border-slate-700 rounded p-2"
+            className="border-2 border-slate-700 rounded p-2 outline-none"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -161,7 +161,7 @@ function FormularioProduto() {
             placeholder="Texto"
             name="descricaoProduto"
             required
-            className="border-2 border-slate-700 rounded p-2"
+            className="border-2 border-slate-700 rounded p-2 outline-none"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -173,7 +173,7 @@ function FormularioProduto() {
             placeholder="Fabricante"
             name="fabricante"
             required
-            className="border-2 border-slate-700 rounded p-2"
+            className="border-2 border-slate-700 rounded p-2 outline-none"
           />
         </div>
 
@@ -185,7 +185,7 @@ function FormularioProduto() {
             value={produto.preco}
             placeholder="Preço"
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
-            className="border-2 border-slate-700 rounded p-2"
+            className="border-2 border-slate-700 rounded p-2 outline-none"
           />
         </div>
 
@@ -197,7 +197,7 @@ function FormularioProduto() {
             type="text"
             placeholder="Foto do Produto"
             name="foto"
-            className="border-2 border-slate-700 rounded p-2"
+            className="border-2 border-slate-700 rounded p-2 outline-none"
           />
         </div>
 
@@ -206,7 +206,7 @@ function FormularioProduto() {
           <select
             name="categoria"
             id="categoria"
-            className="border p-2 border-slate-800 rounded"
+            className="border p-2 border-slate-800 rounded outline-none"
             onChange={(e) => buscarCategoriaPorId(e.currentTarget.value)}
           >
             <option value="" selected disabled>
@@ -224,7 +224,7 @@ function FormularioProduto() {
         <button
           disabled={carregandoCategoria}
           type="submit"
-          className="rounded disabled:bg-slate-200 bg-indigo-400 hover:bg-indigo-800 text-white font-bold w-1/2 mx-auto block py-2"
+          className="rounded disabled:bg-slate-200 bg-turqueza hover:bg-verde-banner text-white font-bold w-1/2 mx-auto block py-2"
         >
           {carregandoCategoria ? (
             <span>Carregando</span>
