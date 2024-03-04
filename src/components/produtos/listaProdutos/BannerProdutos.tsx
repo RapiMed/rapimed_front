@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 function BannerProdutos(){
 
     return (
@@ -14,7 +12,6 @@ function BannerProdutos(){
                         <img src="/imgprod.png"/>
                     </div>  
                 </div>
-                <Link to='/cadastroProduto'>Cadastro produtos</Link>
             </div>
         </>
     )

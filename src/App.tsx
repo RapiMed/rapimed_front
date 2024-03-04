@@ -16,6 +16,7 @@ import DeletarCategoria from "./components/categoria/deletarCategoria/DeletarCat
 import ListaProdutos from "./components/produtos/listaProdutos/ListaProdutos";
 import FormularioProduto from "./components/produtos/formularioProduto/FormularioProduto";
 import DeletarProduto from "./components/produtos/deletarProduto/DeletarProduto";
+import RenderListaProdutos from "./components/produtos/listaProdutos/RenderListaProdutos";
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
             <Route path="/editarCategoria/:id" element={<FormularioCategoria />} />
             <Route path="/cadastrarCategoria" element={<FormularioCategoria />} />
             <Route path="/deletarCategoria/:id" element={<DeletarCategoria />} />
-            <Route path="/produtos" element={<ListaProdutos />} />
+            <Route path="/produtos" element={<RenderListaProdutos />} />
             <Route path="/cadastroProduto" element={<FormularioProduto />} />
             <Route path="/editarProduto/:id" element={<FormularioProduto />} />
             <Route path="/deletarProduto/:id" element={<DeletarProduto />} />

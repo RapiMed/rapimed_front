@@ -94,6 +94,7 @@ function FormularioCategoria() {
     if (token === '') {
       toastAlerta("Você precisa estar logado", "info");
       navigate('/login');
+      handleLogout();
     }
   }, [token]);
 
@@ -103,7 +104,7 @@ function FormularioCategoria() {
         {id === undefined ? 'Cadastre uma nova categoria' : 'Editar categoria'}
       </h1>
 
-      <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovaCategoria}>
+      <form className="w-1/2 flex flex-col gap-4 bg-azul-bg p-10 rounded-[22px]" onSubmit={gerarNovaCategoria}>
         <div className="flex flex-col gap-2">
           <label htmlFor="nomeCategoria">Nome Categoria</label>
           <input
@@ -125,7 +126,7 @@ function FormularioCategoria() {
           />
         </div>
         <button
-          className="rounded text-slate-100 bg-indigo-400 hover:bg-indigo-800 w-1/2 py-2 mx-auto block"
+          className="rounded text-slate-100 bg-turqueza hover:bg-verde-banner text-white w-1/2 py-2 mx-auto block"
           type="submit"
         >
           {id === undefined ? 'Cadastrar' : 'Editar'}

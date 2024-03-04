@@ -146,7 +146,7 @@ function FormularioProduto() {
             value={produto.nomeProduto}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             type="text"
-            placeholder="NomeProduto"
+            placeholder="Nome do produto"
             name="nomeProduto"
             required
             className="border-2 border-slate-700 rounded p-2"
@@ -215,7 +215,7 @@ function FormularioProduto() {
             {categorias.map((categoria) => (
               <>
                 <option value={categoria.id}>
-                  {categoria.descricaoCategoria}
+                  {categoria.nomeCategoria}
                 </option>
               </>
             ))}

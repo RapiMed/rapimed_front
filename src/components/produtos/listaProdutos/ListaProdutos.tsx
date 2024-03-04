@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react';
 import { DNA } from 'react-loader-spinner';
-import { Link } from 'react-router-dom';
 import Produto from '../../../models/Produto';
 import { buscarProduto } from '../../../services/Service';
 
 import { toastAlerta } from '../../../util/toastAlerta';
 import CardProduto from '../modalProduto/CardProduto';
-import BannerProdutos from './BannerProdutos';
 
 function ListaProdutos() {
   const [produtos, setProdutos] = useState<Produto[]>([]);
@@ -25,7 +23,6 @@ function ListaProdutos() {
 
   return (
     <>
-    <BannerProdutos/>
       {produtos.length === 0 && (
         <DNA
           visible={true}
@@ -36,7 +33,7 @@ function ListaProdutos() {
           wrapperClass="dna-wrapper mx-auto"
         />
       )}
-      <div className='container mx-auto my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+      <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 my-auto mb-5'>
         {produtos.map((produto) => (
           <CardProduto key={produto.id} produto={produto} />
         ))}

@@ -6,7 +6,7 @@ import {
 function Footer() {
   return (
     <>
-      <div className="flex justify-center bg-turqueza text-white">
+      <div className="flex sm:justify-center text-center bg-turqueza text-white">
         <div className="container flex flex-col items-center py-4">
           <p className="text-xl font-bold">
             Rapimed - Saúde para Todos | Copyright &copy;

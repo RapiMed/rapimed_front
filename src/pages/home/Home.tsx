@@ -1,25 +1,22 @@
-import Style from "./style.module.css";
+import { CarouselCustomArrows } from "../../components/CarouselCustomArrows";
+import ListaProdutos from "../../components/produtos/listaProdutos/ListaProdutos";
 
 function Home() {
   return (
     <>
-      <main className="bg-verde-banner">
-        <div className="pt-5 flex flex-wrap items-center justify-center">
-          <div className={`w-[19rem] h-[8rem] rounded-[22px] flex items-end p-2 ${Style.banner1}`}>
-            <button className=" bg-laranja-btn text-branco p-2 rounded-[22px] font-bold ml-auto">Medicamentos</button>
+      <main >
+        <div className="bg-azul-bg p-2">
+          <div className="w-full px-6 my-4 sm:w-2/3 m-auto sm:my-6">
+            <CarouselCustomArrows />
           </div>
         </div>
-
-        <div className="p-5 flex flex-wrap items-center justify-center">
-          <div className={`w-[19rem] h-[8rem] rounded-[22px] flex items-end p-2 ${Style.banner3}`}>
-            <button className=" bg-laranja-btn text-branco p-2 rounded-[22px] font-bold ml-auto">Equipamentos</button>
-          </div>
+        <div className="bg-gradient-to-r from-turqueza to-blue-400">
+          <h3 className="text-center bold p-2 font-bold text-white text-3xl">
+            Produtos
+          </h3>
         </div>
-
-        <div className="pb-5 flex flex-wrap items-center justify-center">
-          <div className={`w-[19rem] h-[8rem] rounded-[22px] flex items-end p-2 ${Style.banner2}`}>
-            <button className=" bg-laranja-btn text-branco p-2 rounded-[22px] font-bold ml-auto">Naturais</button>
-          </div>
+        <div className="my-6">
+          <ListaProdutos />
         </div>
       </main>
     </>

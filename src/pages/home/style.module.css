@@ -1,16 +1,6 @@
 .banner1 {
-    background-image: url(/public/banner1.jpg);
+    background-image: url(/public/bb1.jpg);
     background-size: cover;
+    
 }
 
-.banner2 {
-    background-image: url(/public/banner2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.banner3 {
-    background-image: url(/public/banner3.jpg);
-    background-size: cover;
-    background-position: center;
-}
