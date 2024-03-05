@@ -31,7 +31,6 @@ function Login() {
   }
 
   function login(e: ChangeEvent<HTMLFormElement>) {
-    console.error('ta entrando no login')
     e.preventDefault();
     handleLogin(usuarioLogin);
   }
